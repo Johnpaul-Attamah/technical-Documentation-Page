@@ -1,2 +1,2 @@
 # technical-Documentation-Page
-Freecodecamp Responsive design project
+A project to build a tutorial on html5
