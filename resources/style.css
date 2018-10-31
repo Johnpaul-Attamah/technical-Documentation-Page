@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Source Code Pro', cursive;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+#main-doc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar {
+    flex-basis: 22%;
+    border-right: 3px solid rgb(175, 174, 174);
+}
+
+#navbar > ul {
+    width: 22%;
+    position: fixed;
+    top: 75px;
+    bottom: 0;
+    overflow-y: scroll;
+    border-right: 3px solid rgb(175, 174, 174);
+}
+
+#navbar > .nav_header {
+    padding: 25px;
+    position: fixed;
+}
+
+#navbar > ul li {
+    padding: 15px;
+    border-top: 1px solid #222;
+    list-style: none;
+}
+
+#navbar > ul li a {
+    text-decoration: none;
+    font-family: 'Rosario', serif;
+    font-size: 1.1rem;
+    color: #222;
+    text-transform: capitalize;
+}
+
+#general {
+    flex-basis: 70%;
+    margin: 20px auto;
+}
+
+#general h2 {
+    padding: 20px;
+}
+
+#general p {
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    line-height: 30px;
+    width: 90%;
+}
+
+#general code {
+    font-family: monospace;
+    display: block;
+    width: 90%;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 1.1rem;
+    line-height: 25px
+}
+
+#general ul li {
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 10px;
+    width: 90%;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    #main-doc {
+        width: 100%;
+        display: grid;
+    }
+    #navbar {
+        width: 100%;
+        background-color: yellow;
+        height: 108vh;
+        border: none;
+    }
+
+    #navbar > .nav_header {
+        position: relative;
+    }
+    
+    #navbar > ul {
+        position: relative;
+        display: grid;
+        width: 100%;
+        overflow: visible;
+        height: auto;
+        border: none;
+    }
+    
+    #navbar > ul li {
+        width: 100%;
+        padding: 0 15px 15px 15px;
+    }
+    
+    #general {
+        position: relative;
+    }
+
+    #general p {
+        width: 100%;
+    }
+    
+    #general code {
+        width: 90%;
+    }
+    
+    #general ul li {
+        width: 100%;
+    }
+
+    #general .main-section {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #navbar .nav_header > h2 {
+        font-size: 1.1rem;
+    }
+}
